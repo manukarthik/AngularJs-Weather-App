@@ -1,1 +1,8 @@
-<p>This is the partial for view 1.</p>
+<div class="weather">
+    <h1 class="weather-font">Manu's Weather App</h1>
+    <h1 class="weather-font">{{city}}</h1>
+    <h1 class="weather-font-temp">{{weather.main.temp}}<span class="unit" ng-click="changeMetric(weather.main.temp)">{{weather.unit ? weather.unit : "C"}}</span>
+    </h1>
+    <h1 class="weather-desc">{{weatherStatus.description}}</h1>
+    <img class="weather-icon" ng-src="{{weatherStatus.icon}}" alt=""/>
+</div>
